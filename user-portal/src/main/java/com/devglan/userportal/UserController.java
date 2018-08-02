@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 @RequestMapping({"/api"})
 public class UserController {
@@ -36,5 +36,12 @@ public class UserController {
     @GetMapping
     public List<User> findAll(){
         return userService.findAll();
+    }
+
+    @GetMapping(path = "/{email}/{password}")
+    public User findByEmailAndPassword(@PathVariable("email") String email,
+                                       @PathVariable("password") String password){
+        return userService.findByEmail(email,password);
+
     }
 }

@@ -39,4 +39,15 @@ public class UserServiceImpl implements UserService {
     public User update(User user) {
         return null;
     }
+
+    @Override
+    public User findByEmail(String email, String password) {
+        List<User> user = repository.findAll();
+        for(int i = 0; i < user.size(); i++) {
+            if (password.equals(user.get(i).getPassword()) && email.equals(user.get(i).getEmail()))
+                return user.get(i);
+        }
+
+        return null;
+    }
 }

@@ -1,0 +1,4 @@
+
+qsquid:UselessImportCheck"CRemove this unused import 'org.apache.commons.codec.binary.Base64'.(¡éž“ûÿÿÿÿ8ù…í¯Ï,
+Ksquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¡º“âùÿÿÿÿ8ƒÞå®Ï,

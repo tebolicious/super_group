@@ -1,0 +1,7 @@
+
+Lsquid:S1481"+Remove this unused "base64" local variable.(§¤İ›üÿÿÿÿ8ı±Ò°Ï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8êÇÇ¯Ï,
+Fsquid:S2116"%Use "Arrays.toString(array)" instead.(ÿèúÿÿÿÿ8–²°°Ï,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ïã¡İşÿÿÿÿ8êÇÇ¯Ï,
+Fsquid:S2116"%Use "Arrays.toString(array)" instead.(§¤İ›üÿÿÿÿ8ı±Ò°Ï,
+[squid:S1854":Remove this useless assignment to local variable "base64".(§¤İ›üÿÿÿÿ8ı±Ò°Ï,

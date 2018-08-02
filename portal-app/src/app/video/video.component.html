@@ -1,0 +1,24 @@
+<div class="col-md-6">
+<h2> Videos Details</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="hidden">Id</th>
+    <th>Image</th>
+    <th>Title</th>
+    <th>Description</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let video of videos">
+    <td class="hidden">{{video.id}}</td>
+    <td><img src="{{video.image}}" width="100px"></td>
+    <td>{{video.title}}</td>
+    <td>{{video.description}}</td>
+    <td><button class="btn btn-danger" (click)="editVideo(video)"> Edit Video</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>

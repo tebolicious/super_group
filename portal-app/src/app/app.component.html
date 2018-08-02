@@ -4,9 +4,17 @@
     Welcome to {{title}}!
   </h1>
 </div>
+  <div *ngIf="loginTitle != 'logout';then ConnectedContent else DisconnectedContent" class="data-font">
+  </div>
+  <ng-template #ConnectedContent class="data-font">
+    <a routerLink="/{{loginTitle}}">{{loginTitle}}</a>
+  </ng-template>
+  <ng-template #DisconnectedContent class="data-font">
+    <a href="#" (click)="logoutNow()">{{loginTitle}}</a>
+  <a routerLink="/videos">List Video</a>
+  <a style="margin-left:10px" routerLink="/add_video">Add Video</a>
+  </ng-template>
 
-<a routerLink="/users">List Users</a>
-<a style="margin-left:10px" routerLink="/add">Add User</a>
 <br/>
 <router-outlet></router-outlet>
 </div>

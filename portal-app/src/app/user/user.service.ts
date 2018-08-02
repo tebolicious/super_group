@@ -13,8 +13,8 @@ export class UserService {
 
   constructor(private http:HttpClient) {}
 
-  //private userUrl = 'http://localhost:8080/user-portal/user';
-  private userUrl = '/api';
+  private userUrl = 'http://localhost:8080/user-portal/api';
+  //private userUrl = '/api';
 
   public getUsers() {
     return this.http.get<User[]>(this.userUrl);
@@ -26,6 +26,11 @@ export class UserService {
 
   public createUser(user) {
     return this.http.post<User>(this.userUrl, user);
+  }
+  public loginNow(user){
+   console.log(user.email);
+
+   return this.http.get<User>(this.userUrl + "/" + user.email + "/" + user.password);
   }
 
 }
